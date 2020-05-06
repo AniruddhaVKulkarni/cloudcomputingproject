@@ -24,7 +24,7 @@ from pyspark.sql.functions import when
 
 
 ##	Spark Session Creation
-Session_Spark = SparkSession.builder.master("local").appName("wineClasssification").config("spark.some.config.option","some-value").getOrCreate()
+Session_Spark = SparkSession.builder.master("local").appName("ProgrammingAssignment2").config("spark.some.config.option","some-value").getOrCreate()
 
 ##	Dataset Interpretation
 Data_Raw = Session_Spark.read.csv('TrainingDataset.csv',header='true', inferSchema='true', sep=';')
